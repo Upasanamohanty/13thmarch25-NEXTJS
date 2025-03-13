@@ -1,0 +1,11 @@
+import React from 'react';
+
+const PackageIcon = () => {
+  return (
+    <div className="w-[116px] h-[30px] absolute top-[500px] left-[331px] font-inter font-medium text-[25px] leading-[100%] tracking-[0%] text-center capitalize text-black">
+      Packages
+    </div>
+  );
+};
+
+export default PackageIcon;
