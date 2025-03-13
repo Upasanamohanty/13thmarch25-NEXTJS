@@ -1,0 +1,26 @@
+import React from 'react';
+import { CheckCircle } from 'lucide-react';
+
+const FloorCareIcon = () => {
+  return (
+    <div className="w-[384px] h-[184px] absolute top-[268px] left-[707px] bg-black text-white p-4 rounded-lg shadow-lg">
+      <h3 className="text-gray-400 font-semibold text-lg mb-1">Floor Care Services</h3>
+      <p className="text-sm mb-2">
+        Stripping, waxing, buffing, and polishing various types of flooring to maintain appearance and longevity.
+      </p>
+      <div className="flex items-center gap-2">
+        <div className="flex text-yellow-400 text-xl">
+          {Array(5).fill('⭐')}
+        </div>
+      </div>
+      <div className="flex justify-between items-center mt-3">
+        <span className="text-purple-400 font-bold">$3.00 per square foot</span>
+        <button className="bg-teal-500 text-white px-4 py-1 flex items-center rounded-full">
+          <CheckCircle size={16} className="mr-1" /> Added
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default FloorCareIcon;
