@@ -1,0 +1,30 @@
+import React from 'react';
+import { FaHome, FaBroom, FaBug, FaTshirt, FaTruckMoving, FaHeartbeat, FaFemale, FaCarSide, FaPaw, FaTools } from 'react-icons/fa';
+
+const icons = [
+  { icon: <FaHome />, label: "Property Maintenance" },
+  { icon: <FaBroom />, label: "Cleaning Services" },
+  { icon: <FaBug />, label: "Pest Control & Disinfection Services" },
+  { icon: <FaTshirt />, label: "Home Laundry Service" },
+  { icon: <FaTruckMoving />, label: "Movers" },
+  { icon: <FaHeartbeat />, label: "Home Health Care Services" },
+  { icon: <FaFemale />, label: "Home Beauty Service" },
+  { icon: <FaCarSide />, label: "Car Rental" },
+  { icon: <FaPaw />, label: "Home Pets Grooming Services" },
+  { icon: <FaTools />, label: "Automotive Service" },
+];
+
+const ServicesPage = () => {
+  return (
+    <div className="grid grid-cols-4 gap-8 py-8">
+      {icons.map((service, index) => (
+        <div key={index} className="flex flex-col items-center bg-white text-black p-4 rounded-lg shadow-md">
+          {service.icon}
+          <h3 className="mt-2">{service.label}</h3>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default ServicesPage;
